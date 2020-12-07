@@ -1,3 +1,4 @@
+from webScraper.utils import get_random_agent
 # Scrapy settings for webScraper project
 #
 # For simplicity, this file contains only settings considered important or
@@ -14,10 +15,10 @@ NEWSPIDER_MODULE = 'webScraper.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'webScraper (+http://www.yourdomain.com)'
+USER_AGENT = get_random_agent()
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
